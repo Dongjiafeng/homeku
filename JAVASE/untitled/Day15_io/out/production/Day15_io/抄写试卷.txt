@@ -1,0 +1,148 @@
+﻿1，在终端中编译Java源文件使用 Javac 命令，编译之后会生成后缀为 .class 的文件，运行该文件
+的命令为 Java .
+2，Java中的基本数据类型为：byte short int long float double char boolean .
+3,Java 面向对象的三大特性是 封装 继承 多态
+
+4，下面的哪个选项不能通过编译（D）
+   A.String str ="abc"+123+‘d’；
+   B.float f =200；
+   C.int i=200;
+   D.float j =10+10.5;
+5,下列代码运行后会抛出（A）异常
+   String str =null;
+   System.out.println(str.charAt(3));
+
+   A.NullPointerException
+   B.StringIndexOutOfBoundsException
+   C.ArithmeticException
+   D.IOException
+6,下面的哪个选项符合变量命名规则和规范（D）
+   A.extends
+   B.3dPrinter
+   C.themaxvalue
+   D.mTitle
+7,要想定义一个抽象类，在类定义中必须加上哪个修饰符（C）
+   A，final
+   B.private
+   C.abstract
+   D.interface
+8,下列哪个选项不能构成循环语句（C）
+   A.for
+   B.while
+   C.switch
+   D.do...while
+9,假如有数组名为array，如何得到数组的长度（C）
+   A.array.length()
+   B.array.size()
+   C.array.length
+   D.array.size
+10,数组中可以包含的数据类型为（D）
+   A.基本数据类型
+   B.引用数据类型
+   C.基本数据类型和String类型
+   D.任意类型
+11，下面哪个选项可以体现Java的多态性（B）
+   A.重载
+   B.重写
+   C.构造方法
+   D.static
+
+判断题：
+1，可以自定义一个类继承String类。  ×
+2，子类可以重写父类的构造方法。    ×
+3，子类可以在任意位置使用super调用父类的任意方法。  ×
+4，抽象类中不能有构造方法，抽象类中可以没有抽象方法。×
+5，一个类中一定会有一个构造方法。√
+
+简答题：
+1，final修饰符都可以修饰什么，作用是什么？
+final关键字表示最终，不可变
+被final修饰的类，不可以被继承
+被final修饰的方法，不可以被复写
+被final修饰的变量，不可以被改变
+
+2，Java中的方法覆盖（Overriding）和方法重载（Overloading）是什么意思？
+方法覆盖：比如说在子类中，有两个相同方法，都是从父类继承来的，但是每个方法输出的内容有不
+同，是因为我们在子类中给他修改了，扩展了，这就是覆盖（重写），覆盖就是为了给每个子类添加
+独有的行为。  方法的重载：方法名相同，参数列表不同，就是发生了重载。
+
+3，satic关键字是什么意思？可以用它干什么？它修饰的方法可以使用成员变量吗？
+意思是静态的，它可以用来修饰属性和方法，它修饰的方法不可以使用成员变量。
+
+4，循环的要素；方法的组成；什么是匿名对象，有什么用？
+要素：循环条件，循环增量，循环体
+方法的组成：权限修饰符，返回值类型，方法名，参数列表，方法体
+匿名对象：如果一个对象没有名字，它就是匿名对象，匿名对象是没有被其他对象所引用，只能使用
+一次，当对象需要调用多次成员（属性和方法）时，不可以简化成匿名对象使用。
+
+5，使用三种方式，完成两个变量的交换。
+int a;      int a;    int a;
+int b;      int b;    int b;
+int c;      a=a+b;    int c;
+c=a;        b=a-b;    a=a^b;
+a=b;        a=a-b;    b=a^b;
+b=c;                  a=a^b;
+
+6,有一个二维数组array，遍历输出其所有元素
+for(int i=0;i<array[i].length;i++){
+  for(int j=0;j<array[j].length;j++){
+    System.out.println(array[i][j]);
+}
+}
+
+
+
+
+7，写出选择排序
+int[] array={3,4,6,2,0,7,5}
+for(int i=0;i<array.length;i+){
+  for(int j=i+1;j<array.length;j++){
+        if(array[i]>array[j]){
+              int temp =array[i];
+              array[i]=array[j];
+              array[j]=temp;
+        }
+  }
+System.out.println(Arrays.toString(array));       
+
+ 
+8，写出权限修饰符及其含义
+public 共有的，表示在哪里都可以使用对象调用这个方法
+private 私有的，表示只能在本类中使用
+protected 受保护的，同包下，或者子类，可以使用
+
+9，阅读程序，写出输出结果，并在“//”的后面写上注释。
+String str = "abab 1212 qwer 0987"; 
+str.replace(‘a’，‘c’);
+str.toUpperCase();
+str.substring(0,9);
+String[] strs = str.spilt("");
+System.out.println(strs[0]);
+输出结果为：
+
+10，多态的表现形式有哪些？在什么情况下可以使用？
+父类的引用指向了子类的对象，接口的引用指向了它实现类的对象，这两种情况就是多态。
+在程序扩展时，需要用到多态。
+
+11，抽象类和接口的相同点和区别；
+相同点：都不能被实例化 接口的实现类或抽象类的子类都只有实现了接口或抽象类中的方法后才能被实例化
+不同点：接口中只有定义，其方法不能在接口中实现，只有实现接口的类才能实现接口中定义的方法，而抽象
+可以类的方法可以在抽象类中被实现。  接口需要用imlements实现，抽象类只能被继承（extends）。
+
+12，continue，break是如何使用的；
+break语句用于终止某个循环，使程序跳到循环体外的下一条语句，在循环中位于break后的语句将不再执行，
+循环也停止执行。
+continue语句是跳出本次循环，进入下一次循环。
+
+单词
+import 导入  array 数组  获取从控制台的输入 scanner  console 控制台
+continue 继续  exception 异常  index 角标  out of bounds 越界
+NullPointException 空指针  source 源  resource 资源  generate 生成
+duplicate 重复  extends 继承  abstract 抽象的  final 最终；不可变
+instanceof 判断对象的类型  ClassCastException类型转换异常  format 格式
+date 日期  data 数据  random 随机数
+
+ 
+
+
+1

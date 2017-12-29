@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.print.attribute.SetOfIntegerSyntax"/>
+<fullyQualifiedTypeName name="javax.security.auth.kerberos.KerberosKey"/>
+<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+<fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
+<fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterLocation"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.io.StringBufferInputStream"/>
+<fullyQualifiedTypeName name="Student2"/>
+<fullyQualifiedTypeName name="Student"/>
+<fullyQualifiedTypeName name="SaleSclerk"/>
+<fullyQualifiedTypeName name="Courier"/>
+<fullyQualifiedTypeName name="Teacher"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.lanou3g.abs.RainDay"/>
+<fullyQualifiedTypeName name="com.lanou3g.abs.Weather"/>
+<fullyQualifiedTypeName name="java.lang.Package"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.Doctor"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.inter.Work"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.Teacher"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="com.lanou3g.study.normal.CalendarDome"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

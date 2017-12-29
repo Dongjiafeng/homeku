@@ -1,0 +1,28 @@
+
+public class Homework4 {
+	public static void main(String[] args) {
+		for(int i=0;i<11;i++){
+			for(int j=10; j>i;j--){
+				System.out.print(" ");
+			}
+			for(int g=0; g<i;g++){
+				System.out.print("* ");					
+			}
+			
+			System.out.println();
+		}
+		for(int i=0;i<9;i++){
+			
+			
+			for(int j=0; j<i+1;j++){
+				System.out.print(" ");
+			}
+			for(int g=9; g>i;g--){
+				System.out.print("* ");					
+			}
+			
+			System.out.println();
+		}
+	}
+
+}

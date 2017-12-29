@@ -1,0 +1,17 @@
+package demo;
+
+public class Cooker extends Person implements UserInter{
+
+	@Override
+	public void onLine() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void foffLine() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

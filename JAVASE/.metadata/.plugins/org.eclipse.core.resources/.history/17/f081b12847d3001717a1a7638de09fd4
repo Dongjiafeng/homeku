@@ -1,0 +1,22 @@
+import java.util.regex.Matcher;
+
+public class Main2 {
+public static void main(String[] args) {
+
+	Father father = new Father();
+	Mother mother = new Mother();
+	Child child = new Child();
+	//使用对象,调用它的方法去做一些事情
+	//对象名.方法名();
+	father.showInfo();
+	mother.showInfo();
+	child.showInfo();
+	//对象名.属性
+	System.out.println(father.name);
+	Student student = new Student();
+	student.name ="王老六";
+	System.out.println("student.name");
+}
+}
+
+

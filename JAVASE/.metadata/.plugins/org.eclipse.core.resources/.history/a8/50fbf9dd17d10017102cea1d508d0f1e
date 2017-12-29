@@ -1,0 +1,25 @@
+
+public class Homework {
+public static void main(String[] args) {
+	for(int i=0 ; i<10;i++){
+			for(int j = 0; j<20;j++){
+				
+				System.out.print("*");
+			}
+			System.out.println();
+	}
+	int b1 =0;
+	int b2 =0;
+	int b3 =0;
+	int b4 =0;
+	//Ë®ÏÉ»¨
+	int[] a = new int[1000];
+	for(int i =0;i<=999&&i>=100;i++){
+		if(((b1*b1*b1)+(b2*b2*b2)+(b3*b3*b3))>100&&((b1*b1*b1)+(b2*b2*b2)+(b3*b3*b3))<999){
+			b4 =((b1*b1*b1)+(b2*b2*b2)+(b3*b3*b3));
+			b1++; b2++; b3++; b4++;
+			System.out.println(b1+"^3+"+b2+"^3+"+b3+"^3"+"="+b4);
+		}
+	}
+}
+}

@@ -1,0 +1,17 @@
+
+public class Student {
+	//这三行都叫属性
+	//现在这三个属性还没有值呢
+	String name;
+	String school;
+	int id ;
+	
+	
+	public void play(){
+		System.out.println(name+"玩游戏去了");
+	}
+	
+	public void goToStudy(){
+		System.out.println(name+""+);
+	}
+}

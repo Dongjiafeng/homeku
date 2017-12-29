@@ -1,0 +1,30 @@
+
+public class Student {
+	//这三行都叫属性
+	//现在这三个属性还没有值呢
+	String name;
+	String school;
+	int id ;
+	
+	
+	public void play(){
+		System.out.println(name+"玩游戏去了");
+	}
+	
+	public void goToStudy(){
+		System.out.println(name+"");
+	}
+	/*
+	 * public 权限修饰符
+	 * void   返回值类型
+	 * show    方法名  
+	 * (String str)  参数列表
+	 * {}     方法体:当这个方法被调用时,要执行的代码
+	 */
+	public void show(String str){
+		 
+	}
+	public void 买外卖(int money){
+		System.out.println("拿着老师的钱"+money+"去打游戏了");
+	}
+}

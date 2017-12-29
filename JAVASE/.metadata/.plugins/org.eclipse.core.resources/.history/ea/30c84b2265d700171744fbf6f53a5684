@@ -1,0 +1,17 @@
+package Demo1;
+
+import java.util.Scanner;
+
+public class main {
+   public static void main(String[] args) {
+	   Login login = new Login();
+	Scanner input = new Scanner(System.in);
+	System.out.println("请输出用户名:");
+	String yo = input.nextLine();
+	System.out.println("请输入密码:");
+	String mi = input.nextLine();
+	login.show(yo,mi);
+	
+	
+}
+}

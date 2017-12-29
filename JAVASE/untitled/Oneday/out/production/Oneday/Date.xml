@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<persons> 
+  <person name="1" usename="" password="1" job="Worker"/>  
+  <person name="sadasd" usename="asdsad" password="asdasd" job="Worker"/>  
+  <person name="12" usename="12" password="12" job="Worker"/>  
+  <person name="1212" usename="1212" password="1212" job="Worker"/>  
+  <person name="12" usename="12" password="12" job="Worker"/>  
+  <person name="1" usename="12" password="12" job="Worker"/>  
+  <person name="徐超" usename="xuchao" password="12" job="Worker"/>  
+  <person name="李耀" usename="liyao" password="12" job="Worker"/>  
+  <person name="12" usename="12" password="12" job="Worker"/>
+</persons>

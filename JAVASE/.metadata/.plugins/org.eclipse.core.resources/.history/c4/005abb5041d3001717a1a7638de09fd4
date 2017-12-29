@@ -1,0 +1,11 @@
+
+public class Student {
+	String name;
+	String school;
+	int id ;
+	
+	
+	public void play(){
+		System.out.println(name+"ÍæÓÎÏ·È¥ÁË");
+	}
+}

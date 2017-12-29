@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS变量</title>
+    <script type="text/javascript">
+        //       模态对话框
+        //       window.alert("我就是")
+        //       使用var关键字声明一个变量
+        var a;
+        a = 10;
+        a = "哈哈哈";
+        a = 10 - a; //得到的结果是NaN,表示非数值
+        //任何非数字与数字做算术运算得到的都是非值数.
+        //也就是得到的都是NaN
+        a= 10+ "哈哈哈";//这里不是执行算术运算,而是进行字符串的拼接.
+
+        //浏览器会根据需要,在进行算术运算时
+        //自动判断是否可以将变量转化为数值
+        a= "3" - 2;
+
+        var b;//为定义的(undefined)
+        //仅仅声明了一个变量,但是没有被赋值
+
+        b = null;//null在js中表示一个值
+        //null在用作条件时,表示false
+
+        console.log(b + 3);
+
+        if (3 == "3"){
+            console.log("牛皮")
+        }
+        console.log(b);
+
+        var c;
+        console.log(c+3)
+
+//        console.log(a)
+    </script>
+</head>
+<body>
+<button id="btn" onclick="window.alert('lalala')">一去不复返</button>
+
+<button id="lal" ondblclick="window.alert()">哈哈</button>
+
+</body>
+</html>

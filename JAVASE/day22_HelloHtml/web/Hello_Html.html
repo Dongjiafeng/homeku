@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--标签页的名字,是当前html文档的标题-->
+    <title>HelloHtml</title>
+</head>
+<body>
+<!--
+一级标题标签
+h1-h6
+-->
+<h3>我们的网页就是这么简单</h3>
+<p>我是一个段落</p>
+<!--
+  title属性:
+  1,当鼠标悬停到图片上时的提示
+  2,若找不到该图片,则显示这个提示文字
+-->
+<img  id="beatifulgirl"   src="../img/123.JPEG" title="sb" />
+<!--
+    图片的路径问题
+    1.相对路径:
+    相对当前的html的文档的路径
+    比如现在这个文档实在web文件夹下
+    那么这个路径的机会在web文件夹下找
+    也就是说实际找的是:
+    web/img/123.JPEG
+
+    ..即使返回上一级
+-->
+<a href="https://www.baidu.com">百度一下</a>
+
+<a >百度一下</a>
+<!--换行符
+1
+-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--关于id属性
+在同一个html中,id具有唯一性, id属性是找到某一个具体元素的标准
+-->
+<a  href="#beatifulgirl">点击去看美女</a>
+<a href="2-Hello_Html.html#beatifulgirl">看美女</a>
+
+<!--超链接标签
+    如果不给他href属性,则他会失去所有超链接具有的特性
+    如:文字颜色,下划线,可点击,点击之后变色
+    如果给了href属性.但是属性值为""
+    则是刷新当前页面
+
+    如果给了href属性,属性值为"#xx"
+    则表示定位到id为xx的标签(也叫元素)
+    这叫锚点 Hello_Html.html
+
+
+-->
+</body>
+</html>

@@ -1,0 +1,12 @@
+import java.util.regex.Matcher;
+
+public class Main2 {
+public static void main(String[] args) {
+	Father father = new Father();
+	Mother mother = new Mother();
+	Child child = new Child();
+	father.showInfo();
+	mother.showInfo();
+	child.showInfo();
+}
+}

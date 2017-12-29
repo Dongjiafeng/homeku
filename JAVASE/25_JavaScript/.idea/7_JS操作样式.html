@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作样式</title>
+</head>
+<body>
+<h1 id="song">恰同学少年,
+    风华正茂,
+    书生意气,
+    惛斥方求,
+    指点江山,
+    <!--
+    需求:
+    当点击button, h1颜色会随机改变
+    -->
+
+
+</h1>
+<button id="btn">点我有特效</button>
+</body>
+<script type="text/javascript">
+    function btnClicked() {
+        //第一步找到id为song的这个标签
+        var song = document.getElementById("song");
+        //第二部 ,更改颜色为红色
+        song.style.color="red";
+
+    }
+    //第一步找到btn
+    var btn = document.getElementById("btn");
+    //第二步将我们写的方法,赋值给onclick
+    btn.ondblclick=btnClicked;
+
+</script>
+</html>

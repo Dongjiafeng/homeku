@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>都是什么鬼</title>
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+       #div1{
+           width: 800px;
+           height: 800px;
+
+
+       }
+        #div2{
+            width: 800px;
+            height: 100px;
+            background-color: red;
+        }
+        #div2 button{
+            width: 70px;
+            height: 40px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        #div1 div{
+            text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="div2">
+    <button id="1">添加</button>
+    <button id="2">删除</button>
+    <button id="3">小于0</button>
+    <button>大于0</button>
+    <button>刷新</button>
+    <button>显示全部</button>
+</div>
+<div id="div1">
+
+
+
+
+</div>
+</body>
+<script type="text/javascript">
+    $('#1').click(function () {
+
+        $('#div1').append($('<div>').
+        css({"width": "800px","height": "90px","background-color":getRandomColor,"margin":"1px"}).text(getRandom)
+
+        )
+})
+    $('#2').click(function () {
+        $('#div1 div').eq(-1).remove();
+    })
+    function getRandomColor() {
+        var c = '#';
+        var cArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        for (var i = 0; i < 6; i++) {
+            var cIndex = Math.round(Math.random() * 15);
+            c += cArray[cIndex];
+        }
+        return c;
+    }
+    function getRandom() {
+        var c=Math.floor(100-(150*Math.random()));
+        return c;
+    }
+    $('#3').click(function () {
+        var text = $('#div1 div').text();
+        if(text>0){
+            $('#div1 div').css({"visibility":"hidden"})
+        }
+    })
+
+
+
+
+
+</script>
+</html>

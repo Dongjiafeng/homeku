@@ -1,0 +1,18 @@
+package com.lanou3g.homework;
+
+public class Penguin {
+  private String name;
+  private int health = 100;
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getHealth() {
+	return health;
+}
+public void setHealth(int health) {
+	this.health = health;
+}
+}

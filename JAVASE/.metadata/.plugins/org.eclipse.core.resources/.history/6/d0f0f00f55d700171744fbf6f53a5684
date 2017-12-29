@@ -1,0 +1,17 @@
+package Demo1;
+
+public class Worker implements UserInter{
+
+	@Override
+	public void onLine() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void offLine() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
