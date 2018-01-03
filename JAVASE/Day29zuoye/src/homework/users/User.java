@@ -5,30 +5,18 @@ package homework.users;
  */
 public class User {
 	private String username;
-	private String gender;
+
 	private String password;
 
 	@Override
 	public String toString() {
 		return "User{" +
 				"username='" + username + '\'' +
-				", gender='" + gender + '\'' +
 				", password='" + password + '\'' +
 				'}';
 	}
 
-	public User() {
-	}
-
-	public User(String username, String gender, String password) {
-
-		this.username = username;
-		this.gender = gender;
-		this.password = password;
-	}
-
 	public String getUsername() {
-
 		return username;
 	}
 
@@ -36,19 +24,21 @@ public class User {
 		this.username = username;
 	}
 
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
 	public String getPassword() {
 		return password;
 	}
 
 	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public User() {
+
+	}
+
+	public User(String username, String password) {
+
+		this.username = username;
 		this.password = password;
 	}
 }

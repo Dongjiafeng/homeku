@@ -118,11 +118,11 @@
     <div class="box">
       <h1>唐僧登录</h1>
       <form action="show" method="post">
-        <input type="text"  id="haha" placeholder="唐僧账号/唐僧邮箱账号"
+        <input type="text"  name = "username" id="haha" placeholder="唐僧账号/唐僧邮箱账号"
                onfocus="showOnfocus(this)" onblur="showOnblur(this)">
 
         <br/>
-        <input type="password" placeholder="登录密码">
+        <input type="password" name="password" placeholder="登录密码">
 
         <input
                 type="submit" value="登   录" id="s1" >

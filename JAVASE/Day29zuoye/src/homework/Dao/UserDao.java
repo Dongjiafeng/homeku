@@ -18,26 +18,32 @@ public class UserDao {
         Connection conn = null;
         try {
             conn = JdbcUtil.getConnection();
-            qr.update(conn,sql,user.getUsername(),user.getPassword());
+            qr.update(conn, sql, user.getUsername(), user.getPassword());
         } catch (SQLException e) {
             e.printStackTrace();
         }
-            JdbcUtil.close(conn);
+        JdbcUtil.close(conn);
     }
 
 
-    public List<User> queryAll(){
-        String sql = "select user from username";
-        Connection conn;
-        conn= JdbcUtil.getConnection();
+    public User queryAll(String username) {
+        String sql =
+                "select * from user where username=?";
 
+        Connection conn = JdbcUtil.getConnection();
+        User user = new User();
         try {
-            List<User> query = qr.query(conn, sql, new BeanListHandler<User>(User.class));
-            return  query;
+            user = qr.query(conn, sql, new BeanHandler<User>(User.class), username);
+            System.out.println("-------" + user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return  null;
+        return user;
     }
 }

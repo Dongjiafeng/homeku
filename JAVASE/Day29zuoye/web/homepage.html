@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>主页</title>
+    <script src="libs/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-欢迎来到唐僧主页!!!!!
+<form action="homepage">
+<h1>用户名：<span id="username"></span></h1>
+<h1>密码：<span id="password"></span></h1>
+    <input >
+</form>
 </body>
+<script type="text/javascript">
+    $.getJSON("http://localhost:8080/homepage",
+        function (json,status) {
+            if(status == "success"){
+                $('#username').text(json['username']);
+                $('#password').text(json['password']);
+            }
+        })
+
+
+
+</script>
 </html>
