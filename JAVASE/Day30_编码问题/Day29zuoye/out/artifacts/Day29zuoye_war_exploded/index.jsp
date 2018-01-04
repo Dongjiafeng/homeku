@@ -122,7 +122,7 @@
                onfocus="showOnfocus(this)" onblur="showOnblur(this)">
 
         <br/>
-        <input type="password" name="password" placeholder="登   录密码">
+        <input type="password" name="password" placeholder="登录密码">
 
         <input
                 type="submit" value="登   录" id="s1" >
