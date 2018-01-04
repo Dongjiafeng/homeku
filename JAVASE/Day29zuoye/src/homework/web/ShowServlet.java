@@ -33,10 +33,13 @@ public class ShowServlet extends HttpServlet {
             if(user.getUsername().equals(u.getUsername())){
                 if(user.getPassword().equals(u.getPassword())){
 
-                    getServletContext().setAttribute("user",user);
-                    String username = request.getParameter("username");
-                    HttpSession session = request.getSession();
-                    session.setAttribute("username", username);
+//                    getServletContext().setAttribute("user",user);
+//                    String username = request.getParameter("username");
+//                    HttpSession session = request.getSession();
+//                    session.setAttribute("username", username);
+//                    request.getRequestDispatcher("/homepage.jsp")
+//                            .forward(request,response);
+                    request.getSession().setAttribute("user",user);
                     request.getRequestDispatcher("/homepage.jsp")
                             .forward(request,response);
 

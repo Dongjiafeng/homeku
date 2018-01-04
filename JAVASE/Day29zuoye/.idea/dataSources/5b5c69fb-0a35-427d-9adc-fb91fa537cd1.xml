@@ -22,46 +22,63 @@
     <schema id="15" parent="1" name="day30">
       <Visible>1</Visible>
     </schema>
-    <table id="16" parent="14" name="user"/>
-    <table id="17" parent="15" name="books"/>
-    <column id="18" parent="16" name="id">
+    <table id="16" parent="14" name="books"/>
+    <table id="17" parent="14" name="user"/>
+    <table id="18" parent="15" name="books"/>
+    <column id="19" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="20" parent="16" name="bookName">
+      <Position>2</Position>
+      <DataType>tinytext|0</DataType>
+    </column>
+    <column id="21" parent="16" name="author">
+      <Position>3</Position>
+      <DataType>tinytext|0</DataType>
+    </column>
+    <column id="22" parent="16" name="price">
+      <Position>4</Position>
+      <DataType>tinytext|0</DataType>
+    </column>
+    <column id="23" parent="17" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="19" parent="16" name="username">
+    <column id="24" parent="17" name="username">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="20" parent="16" name="password">
+    <column id="25" parent="17" name="password">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <key id="21" parent="16" name="PRIMARY">
+    <key id="26" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="22" parent="17" name="id">
+    <column id="27" parent="18" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="23" parent="17" name="bookName">
+    <column id="28" parent="18" name="bookName">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="24" parent="17" name="author">
+    <column id="29" parent="18" name="author">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="25" parent="17" name="price">
+    <column id="30" parent="18" name="price">
       <Position>4</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <key id="26" parent="17" name="PRIMARY">
+    <key id="31" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
-@WebServlet(name = "InsertBookServlet",urlPatterns = "insertBook")
+@WebServlet(name = "InsertBookServlet",urlPatterns = "/insertBook")
 public class InsertBookServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         BookDao bookDao = new BookDao();
@@ -24,7 +24,7 @@ public class InsertBookServlet extends HttpServlet {
             String bookName = books.getBookName();
             Books query = bookDao.query(bookName);
             if(query != null){
-                response.sendRedirect("/homepage.jsp");
+                response.sendRedirect("/index.jsp");
 
                 return;
             }
@@ -34,6 +34,7 @@ public class InsertBookServlet extends HttpServlet {
                 bookDao.insert(books);
 
             response.sendRedirect("/homepage.jsp");
+            getServletContext().setAttribute("books",books);
 
         } catch (IllegalAccessException e) {
             e.printStackTrace();
