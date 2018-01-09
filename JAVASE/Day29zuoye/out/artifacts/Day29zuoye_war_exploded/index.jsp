@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>
     <title>欢迎来到唐僧云</title>
@@ -118,14 +119,24 @@
     <div class="box">
       <h1>唐僧登录</h1>
       <form action="show" method="post">
-        <input type="text"  name = "username" id="haha" placeholder="唐僧账号/唐僧邮箱账号"
-               onfocus="showOnfocus(this)" onblur="showOnblur(this)">
+        <input type="text"  name = "username" id="haha"
+               onfocus="showOnfocus(this)" onblur="showOnblur(this)" value="<%
+               Cookie[] cookies = request.getCookies();
+               if (cookies!=null){for (Cookie cookie : cookies) {
+                 if (cookie.getName().equals("username")){
+                     String value = cookie.getValue();
+                     out.write(value);
+                 }
+               }}else {
+                     out.write("    ");
+                 }
+               %>">
 
         <br/>
         <input type="password" name="password" placeholder="登   录密码">
+        <span></span>
 
-        <input
-                type="submit" value="登   录" id="s1" >
+        <input type="submit" value="登   录" id="s1" >
         <span>还没有账号?<a href="Reigster.html">
                     免费注册</a></span>
         <span id="s2"><a href="Reigster.html">忘记密码</a></span>

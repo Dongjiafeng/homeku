@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>
     <title>欢迎来到唐僧云</title>
@@ -133,9 +134,9 @@
 
         <br/>
         <input type="password" name="password" placeholder="登   录密码">
+        <span></span>
 
-        <input
-                type="submit" value="登   录" id="s1" >
+        <input type="submit" value="登   录" id="s1" >
         <span>还没有账号?<a href="Reigster.html">
                     免费注册</a></span>
         <span id="s2"><a href="Reigster.html">忘记密码</a></span>
