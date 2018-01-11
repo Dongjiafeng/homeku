@@ -15,7 +15,7 @@ public class UserDao {
         Connection conn=null;
         conn= JdbcUtil.getConnection();
         try {
-            qr.update(conn,sql,
+                qr.update(conn,sql,
                     user.getUid(),user.getUsername(),user.getPassword(),
                     user.getEmail(),user.getCode(),user.isState());
         } catch (SQLException e) {

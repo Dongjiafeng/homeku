@@ -33,69 +33,40 @@
   
   <body>
 
+  <c:forEach items="${requestScope.book}" var="books" step="1">
+      <div class="icon">
+          <a href="<c:url value='/cart?method=findbook&bid=${books.bid}'/>"><img src="<c:url value='${books.image}'/>" border="0"/></a>
+          <br/>
+          <a href="<c:url value='/cart?method=findbook&bid=${books.bid}'/>">${books.bname}</a>
+      </div>
+  </c:forEach>
+
+<c:forEach items="${requestScope.bookse}" step="1" var="se">
   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/8758723-1_l.jpg'/>" border="0"/></a>
+      <a href="<c:url value='/cart?method=findbook&bid=${se.bid}'/>"><img src="<c:url value='${se.image}'/>" border="0"/></a>
       <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
+   	<a href="<c:url value='/cart?method=findbook&bid=${se.bid}'/>">${se.bname}</a>
   </div>
+</c:forEach>
+
+<c:forEach items="${requestScope.bookee}" step="1" var="ee">
   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/8991366-1_l.jpg'/>" border="0"/></a>
+      <a href="<c:url value='/cart?method=findbook&bid=${ee.bid}'/>"><img src="<c:url value='${ee.image}'/>" border="0"/></a>
       <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
+   	<a href="<c:url value='/cart?method=findbook&bid=${ee.bid}'/>">${ee.bname}</a>
   </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/9265169-1_l.jpg'/>" border="0"/></a>
+</c:forEach>
+
+<c:forEach items="${requestScope.bookLe}" step="1" var="Le">
+  <div class="icon">
+      <a href="<c:url value='/cart?method=findbook&bid=${Le.bid}'/>"><img src="<c:url value='${Le.image}'/>" border="0"/></a>
       <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
+   	<a href="<c:url value='/cart?method=findbook&bid=${Le.bid}'/>">${Le.bname}</a>
   </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/9317290-1_l.jpg'/>" border="0"/></a>
-      <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
-  </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/20029394-1_l.jpg'/>" border="0"/></a>
-      <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
-  </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/20285763-1_l.jpg'/>" border="0"/></a>
-      <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
-  </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/20385925-1_l.jpg'/>" border="0"/></a>
-      <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
-  </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/22722790-1_l.jpg'/>" border="0"/></a>
-      <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
-  </div>
-   <div class="icon">
-    <a href="<c:url value='/jsps/book/desc.jsp'/>"><img src="<c:url value='/book_img/22788412-1_l.jpg'/>" border="0"/></a>
-      <br/>
-   	<a href="<c:url value='/jsps/book/desc.jsp'/>">Java开发详解</a>
-  </div>
+</c:forEach>
   </body>
 
-  <script type="text/javascript">
-    $.getJSON("http://localhost:8080/book",function (json, status) {
-        if(status=="success"){
-            if (json!=null){
-                $.each()
-            }
-        }
 
-    })
-
-
-
-
-
-
-  </script>
 
  
 </html>

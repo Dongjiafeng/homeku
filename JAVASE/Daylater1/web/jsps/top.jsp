@@ -34,7 +34,7 @@
 <h1 style="text-align: center;">LANOU书店</h1>
 <div style="font-size: 10pt;">
 		您好：张三&nbsp;&nbsp;|&nbsp;&nbsp;
-		<a href="<c:url value='/jsps/cart/list.jsp'/>" target="body">我的购物车</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="<c:url value='/cart?method=findAll&bid=${sessionScope.All.bid}'/>" target="body">我的购物车</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 		<a href="<c:url value='/jsps/order/list.jsp'/>" target="body">我的订单</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 		<a href="javascript:alert('您已经退出');" target="_parent">退出</a>
 		<br/>

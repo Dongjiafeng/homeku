@@ -34,16 +34,16 @@
   
   <body>
 <div>
-	<a href="<c:url value='/jsps/book/list.jsp'/>">全部分类</a>
+	<a href="<c:url value='http://localhost:8080/book?method=books'/>">全部分类</a>
 </div>
 <div>
-	<a href="<c:url value='/jsps/book/list.jsp'/>">JavaSE分类</a >
+	<a href="<c:url value='http://localhost:8080/book?method=bookSe'/>">JavaSE分类</a >
 </div>
 <div>
-	<a href="<c:url value='/jsps/book/list.jsp'/>">JavaEE分类</a>
+	<a href="<c:url value='http://localhost:8080/book?method=bookEe'/>">JavaEE分类</a>
 </div>
 <div>
-	<a href="<c:url value='/jsps/book/list.jsp'/>">Javascript分类</a>
+	<a href="<c:url value='http://localhost:8080/book?method=bookLe'/>">Javascript分类</a>
 </div>
   </body>
 </html>

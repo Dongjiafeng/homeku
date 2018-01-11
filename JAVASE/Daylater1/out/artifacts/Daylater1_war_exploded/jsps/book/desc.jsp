@@ -50,19 +50,24 @@
 	}
 </style>
   </head>
-  
+
+
   <body>
-  <div>
-    <img src="<c:url value='/book_img/8758723-1_l.jpg'/>" border="0"/>
-  </div>
+
+
+      <div>
+
+          <img src="<c:url value='${sessionScope.All.image}'/>" border="0"/></a>
+      </div>
   <ul>
-    <li>书名：Java开发详解</li>
-    <li>作者：张孝祥</li>
-    <li>单价：39.9元</li>
+    <li>书名：${sessionScope.All.bname}</li>
+    <li>作者：${sessionScope.All.author}</li>
+    <li>单价：${sessionScope.All.price}</li>
   </ul>
-  <form id="form" action="<c:url value='/jsps/cart/list.jsp'/>" method="post">
+  <form id="form" action="<c:url value='/cart?method=findAll&bid=${sessionScope.All.bid}'/>" method="post">
   	<input type="text" size="3" name="count" value="1"/>
   </form>
   <a href="javascript:document.getElementById('form').submit();"></a>
+
   </body>
 </html>
